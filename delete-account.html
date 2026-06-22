@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Exclusão de Conta - Raça Centro de Artes</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 { color: #111; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; font-size: 1.6em; }
+        p, li { color: #555; }
+        ol { padding-left: 20px; }
+        .alert {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="email"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #dc3545;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+        }
+        button:hover { background-color: #bd2130; }
+        .footer { margin-top: 40px; text-align: center; font-size: 0.85em; color: #888; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitação de Exclusão de Conta</h1>
+        <p>Esta página destina-se aos usuários do aplicativo <strong>Raça Centro de Artes</strong> que desejam solicitar a exclusão de suas contas e dados pessoais associados, em conformidade com as diretrizes do Google Play e da LGPD.</p>
+
+        <div class="alert">
+            <strong>Atenção:</strong> A exclusão da conta é uma ação definitiva. Ao prosseguir, você perderá o acesso ao seu histórico de turmas, canais de mensagens e pontuações do jogo Memorix.
+        </div>
+
+        <h2>Como solicitar a exclusão:</h2>
+        <ol>
+            <li>Preencha o formulário abaixo com o e-mail cadastrado no aplicativo.</li>
+            <li>Nossa equipe administrativa receberá o seu pedido.</li>
+            <li>Um e-mail de confirmação será enviado para você em até <strong>7 dias úteis</strong> para validação da identidade.</li>
+            <li>Após a confirmação, o processo de eliminação dos dados será concluído.</li>
+        </ol>
+
+        <hr style="border: 0; border-top: 1px solid #eaeaea; margin: 30px 0;">
+
+        <!-- Formulário Visual Exigido pelo Google -->
+        <form onsubmit="alert('Solicitação enviada com sucesso! Um e-mail de confirmação será enviado em breve.'); return false;">
+            <div class="form-group">
+                <label for="name">Nome Completo do Aluno/Usuário:</label>
+                <input type="text" id="name" required placeholder="Ex: Gentil Sabino">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail Cadastrado no App:</label>
+                <input type="email" id="email" required placeholder="seu-email@dominio.com">
+            </div>
+            <button type="submit">Solicitar Exclusão de Conta e Dados</button>
+        </form>
+
+        <h2>Dados que serão excluídos:</h2>
+        <ul>
+            <li>Dados cadastrais de login (e-mail, senha criptografada e foto de perfil).</li>
+            <li>Histórico de mensagens enviadas nos canais internos.</li>
+            <li>Registros de pontuação e posições no ranking do jogo Memorix.</li>
+        </ul>
+
+        <h2>Dados retidos por obrigação legal:</h2>
+        <p>Em conformidade com a legislação brasileira, os registros de transações financeiras e histórico de cobranças de mensalidades anteriores serão mantidos em nossos arquivos pelo período legal exigido pela receita/fiscalização, sendo completamente anonimizados para fins de uso no aplicativo.</p>
+
+        <div class="footer">
+            <p>&copy; 2026 Raça Centro de Artes. Desenvolvido em conformidade com as políticas do Google Play.</p>
+        </div>
+    </div>
+</body>
+</html>
